@@ -1,0 +1,60 @@
+<button onclick="runTest()">
+  Run
+</button>
+<button id="stopButton">
+  Stop
+</button>
+<label id="counter">searched 0 states.</label>
+<label id="solution"></label>
+
+<div class="cube" id="startCube">
+  <div></div>
+  <div class="face back" title="back side of cube">
+    <button class="cell blue" onclick="toggleColor(this)"> </button>
+    <button class="cell blue" onclick="toggleColor(this)"> </button>
+    <button class="cell blue" onclick="toggleColor(this)"> </button>
+    <button class="cell blue" onclick="toggleColor(this)"> </button>
+  </div>
+  <div></div>
+  <div></div>
+  <div class="face top" title="top side of cube">
+    <button class="cell yellow" onclick="toggleColor(this)"> </button>
+    <button class="cell yellow" onclick="toggleColor(this)"> </button>
+    <button class="cell yellow" onclick="toggleColor(this)"> </button>
+    <button class="cell yellow" onclick="toggleColor(this)"> </button>
+  </div>
+  <div></div>
+  <div class="face left" title="left side of cube">
+    <button class="cell red" onclick="toggleColor(this)"> </button>
+    <button class="cell red" onclick="toggleColor(this)"> </button>
+    <button class="cell red" onclick="toggleColor(this)"> </button>
+    <button class="cell red" onclick="toggleColor(this)"> </button>
+  </div>
+  <div class="face front" title="front side of cube">
+    <button class="cell green" onclick="toggleColor(this)"> </button>
+    <button class="cell green" onclick="toggleColor(this)"> </button>
+    <button class="cell green" onclick="toggleColor(this)"> </button>
+    <button class="cell green"> </button>
+  </div>
+  <div class="face right" title="right side of cube">
+    <button class="cell orange" onclick="toggleColor(this)"> </button>
+    <button class="cell orange" onclick="toggleColor(this)"> </button>
+    <button class="cell orange"> </button>
+    <button class="cell orange" onclick="toggleColor(this)"> </button>
+  </div>
+  <div></div>
+  <div class="face bottom" title="bottom side of cube">
+    <button class="cell white" onclick="toggleColor(this)"> </button>
+    <button class="cell white"> </button>
+    <button class="cell white" onclick="toggleColor(this)"> </button>
+    <button class="cell white" onclick="toggleColor(this)"> </button>
+  </div>
+  <div></div>
+</div>
+
+<button id="A" onclick="A()" title="rotate back side of cube clockwise">A</button>
+<button id="Ap" onclick="Ap()" title="rotate back side of cube anticlockwise">A'</button>
+<button id="T" onclick="T()" title="rotate top side of cube clockwise">T</button>
+<button id="Tp" onclick="Tp()" title="rotate top side of cube anticlockwise">T'</button>
+<button id="L" onclick="L()" title="rotate left side of cube clockwise">L</button>
+<button id="Lp" onclick="Lp()" title="rotate left side of cube anticlockwise">L'</button>
